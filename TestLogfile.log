@@ -115,3 +115,163 @@
 2018-08-22 17:04:16,176 INFO  [Log] 从Excel文件中读取到的操作值：无 
 2018-08-22 17:04:17,621 INFO  [Log] 关闭浏览器 
 2018-08-22 17:04:17,676 INFO  [Log] ----------------------     SendMail01 执行结束     ---------------------- 
+2018-11-27 11:46:20,476 INFO  [Log] ----------------------     SendMail01 开始执行     ---------------------- 
+2018-11-27 11:46:20,481 INFO  [Log] 从Excel文件中读取到的关键字：open_browser 
+2018-11-27 11:46:20,481 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:46:20,481 INFO  [Log] 从Excel文件中读取到的操作值：chrome 
+2018-11-27 11:46:25,978 INFO  [Log] chrome浏览器启动成功 
+2018-11-27 11:46:26,317 INFO  [Log] 从Excel文件中读取到的关键字：navigate 
+2018-11-27 11:46:26,317 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:46:26,317 INFO  [Log] 从Excel文件中读取到的操作值：http://mail.qq.com 
+2018-11-27 11:46:29,900 INFO  [Log] 地址：http://mail.qq.com打开成功 
+2018-11-27 11:46:30,000 INFO  [Log] 从Excel文件中读取到的关键字：switch_to_Iframe 
+2018-11-27 11:46:30,000 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:46:30,000 INFO  [Log] 从Excel文件中读取到的操作值：login_frame 
+2018-11-27 11:46:30,117 INFO  [Log] 转入ID：login_frameIframe页面成功 
+2018-11-27 11:46:30,203 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:46:30,203 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.loginwindow 
+2018-11-27 11:46:30,203 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:46:30,452 INFO  [Log] 单击loginPage.loginwindow页面元素 
+2018-11-27 11:46:30,562 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:46:30,562 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.username 
+2018-11-27 11:46:30,562 INFO  [Log] 从Excel文件中读取到的操作值：4.15304492E8 
+2018-11-27 11:46:30,891 INFO  [Log] 在loginPage.username元素中，输入：4.15304492E8 
+2018-11-27 11:46:30,991 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:46:30,991 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.password 
+2018-11-27 11:46:30,991 INFO  [Log] 从Excel文件中读取到的操作值：Administrator1 
+2018-11-27 11:46:31,342 INFO  [Log] 在loginPage.password元素中，输入：Administrator1 
+2018-11-27 11:46:31,414 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:46:31,414 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.loginbuttonA 
+2018-11-27 11:46:31,414 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:46:31,639 INFO  [Log] 单击loginPage.loginbuttonA页面元素 
+2018-11-27 11:46:31,721 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:46:31,721 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:46:31,721 INFO  [Log] 从Excel文件中读取到的操作值：1000 
+2018-11-27 11:46:32,723 INFO  [Log] 休眠：1秒 
+2018-11-27 11:46:32,824 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:46:32,824 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.ipassword 
+2018-11-27 11:46:32,824 INFO  [Log] 从Excel文件中读取到的操作值：a415304492 
+2018-11-27 11:46:32,879 INFO  [Log] 在loginPage.ipassword元素中，输入：a415304492失败，具体异常信息：no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="pp"]"}
+  (Session info: chrome=56.0.2924.87)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 43 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'CYAN-LUO', ip: '192.168.24.37', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.29.461591 (62ebf098771772160f391d75e589dc567915b233), userDataDir=C:\Users\CYAN.LUO\AppData\Local\Temp\scoped_dir9464_22382}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=56.0.2924.87, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 89d9c8fa50d0af6cc80a8535c49ccbb0
+*** Element info: {Using=xpath, value=//*[@id="pp"]} 
+2018-11-27 11:46:35,228 ERROR [Log] 关闭浏览器 
+2018-11-27 11:46:35,259 INFO  [Log] ----------------------     SendMail01 执行结束     ---------------------- 
+2018-11-27 11:46:35,259 INFO  [Log] ----------------------     SendMail01 执行结束     ---------------------- 
+2018-11-27 11:46:59,543 INFO  [Log] ----------------------     SendMail01 开始执行     ---------------------- 
+2018-11-27 11:46:59,550 INFO  [Log] 从Excel文件中读取到的关键字：open_browser 
+2018-11-27 11:46:59,550 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:46:59,550 INFO  [Log] 从Excel文件中读取到的操作值：chrome 
+2018-11-27 11:47:04,731 INFO  [Log] chrome浏览器启动成功 
+2018-11-27 11:47:04,971 INFO  [Log] 从Excel文件中读取到的关键字：navigate 
+2018-11-27 11:47:04,971 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:04,971 INFO  [Log] 从Excel文件中读取到的操作值：http://mail.qq.com 
+2018-11-27 11:47:08,460 INFO  [Log] 地址：http://mail.qq.com打开成功 
+2018-11-27 11:47:08,587 INFO  [Log] 从Excel文件中读取到的关键字：switch_to_Iframe 
+2018-11-27 11:47:08,587 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:08,587 INFO  [Log] 从Excel文件中读取到的操作值：login_frame 
+2018-11-27 11:47:08,746 INFO  [Log] 转入ID：login_frameIframe页面成功 
+2018-11-27 11:47:08,833 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:47:08,833 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.loginwindow 
+2018-11-27 11:47:08,833 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:09,028 INFO  [Log] 单击loginPage.loginwindow页面元素 
+2018-11-27 11:47:09,128 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:47:09,129 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.username 
+2018-11-27 11:47:09,129 INFO  [Log] 从Excel文件中读取到的操作值：415304492 
+2018-11-27 11:47:09,332 INFO  [Log] 在loginPage.username元素中，输入：415304492 
+2018-11-27 11:47:09,402 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:47:09,402 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.password 
+2018-11-27 11:47:09,402 INFO  [Log] 从Excel文件中读取到的操作值：Administrator1 
+2018-11-27 11:47:09,628 INFO  [Log] 在loginPage.password元素中，输入：Administrator1 
+2018-11-27 11:47:09,707 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:47:09,707 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.loginbuttonA 
+2018-11-27 11:47:09,707 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:09,880 INFO  [Log] 单击loginPage.loginbuttonA页面元素 
+2018-11-27 11:47:09,961 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:47:09,961 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:09,961 INFO  [Log] 从Excel文件中读取到的操作值：1000 
+2018-11-27 11:47:10,962 INFO  [Log] 休眠：1秒 
+2018-11-27 11:47:11,054 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:47:11,055 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.ipassword 
+2018-11-27 11:47:11,055 INFO  [Log] 从Excel文件中读取到的操作值：a415304492 
+2018-11-27 11:47:11,255 INFO  [Log] 在loginPage.ipassword元素中，输入：a415304492 
+2018-11-27 11:47:11,327 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:47:11,328 INFO  [Log] 从Excel文件中读取到的定位表达式：loginPage.loginbuttonB 
+2018-11-27 11:47:11,328 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:13,298 INFO  [Log] 单击loginPage.loginbuttonB页面元素 
+2018-11-27 11:47:13,385 INFO  [Log] 从Excel文件中读取到的关键字：turn_out_Iframe 
+2018-11-27 11:47:13,385 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:13,385 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:13,487 INFO  [Log] 转出Iframe 
+2018-11-27 11:47:13,555 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:47:13,555 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:13,555 INFO  [Log] 从Excel文件中读取到的操作值：3000 
+2018-11-27 11:47:16,555 INFO  [Log] 休眠：3秒 
+2018-11-27 11:47:16,632 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:47:16,632 INFO  [Log] 从Excel文件中读取到的定位表达式：homepage.writeLetterLink 
+2018-11-27 11:47:16,632 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:17,117 INFO  [Log] 单击homepage.writeLetterLink页面元素 
+2018-11-27 11:47:17,208 INFO  [Log] 从Excel文件中读取到的关键字：press_CtrlV 
+2018-11-27 11:47:17,209 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:17,209 INFO  [Log] 从Excel文件中读取到的操作值：***@163.com 
+2018-11-27 11:47:17,440 INFO  [Log] 使用剪切板复制数据：***@163.com 
+2018-11-27 11:47:17,522 INFO  [Log] 从Excel文件中读取到的关键字：switch_to_Iframe 
+2018-11-27 11:47:17,522 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:17,522 INFO  [Log] 从Excel文件中读取到的操作值：mainFrame 
+2018-11-27 11:47:17,622 INFO  [Log] 转入ID：mainFrameIframe页面成功 
+2018-11-27 11:47:17,689 INFO  [Log] 从Excel文件中读取到的关键字：input 
+2018-11-27 11:47:17,689 INFO  [Log] 从Excel文件中读取到的定位表达式：writemailpage.mailsubject 
+2018-11-27 11:47:17,690 INFO  [Log] 从Excel文件中读取到的操作值：测试邮件 
+2018-11-27 11:47:17,906 INFO  [Log] 在writemailpage.mailsubject元素中，输入：测试邮件 
+2018-11-27 11:47:17,971 INFO  [Log] 从Excel文件中读取到的关键字：press_Tab 
+2018-11-27 11:47:17,971 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:17,971 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:17,972 INFO  [Log] 按下Tab键 
+2018-11-27 11:47:18,036 INFO  [Log] 从Excel文件中读取到的关键字：press_CtrlV 
+2018-11-27 11:47:18,036 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:18,036 INFO  [Log] 从Excel文件中读取到的操作值：Parameterization 
+2018-11-27 11:47:18,037 INFO  [Log] 使用剪切板复制数据：Parameterization 
+2018-11-27 11:47:18,102 INFO  [Log] 从Excel文件中读取到的关键字：click 
+2018-11-27 11:47:18,102 INFO  [Log] 从Excel文件中读取到的定位表达式：writemailpage.attachmentButton 
+2018-11-27 11:47:18,102 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:18,295 INFO  [Log] 单击writemailpage.attachmentButton页面元素 
+2018-11-27 11:47:18,370 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:47:18,370 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:18,370 INFO  [Log] 从Excel文件中读取到的操作值：1000 
+2018-11-27 11:47:19,371 INFO  [Log] 休眠：1秒 
+2018-11-27 11:47:19,446 INFO  [Log] 从Excel文件中读取到的关键字：press_CtrlV 
+2018-11-27 11:47:19,446 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:19,446 INFO  [Log] 从Excel文件中读取到的操作值：文件path 
+2018-11-27 11:47:19,448 INFO  [Log] 使用剪切板复制数据：文件path 
+2018-11-27 11:47:19,522 INFO  [Log] 从Excel文件中读取到的关键字：press_Enter 
+2018-11-27 11:47:19,522 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:19,522 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:19,523 INFO  [Log] 按下Enter键 
+2018-11-27 11:47:19,601 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:47:19,601 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:19,601 INFO  [Log] 从Excel文件中读取到的操作值：5000 
+2018-11-27 11:47:24,601 INFO  [Log] 休眠：5秒 
+2018-11-27 11:47:24,673 INFO  [Log] 从Excel文件中读取到的关键字：click_SendMailButton 
+2018-11-27 11:47:24,673 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:24,673 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:24,845 INFO  [Log] 单击发送按钮 
+2018-11-27 11:47:24,919 INFO  [Log] 从Excel文件中读取到的关键字：sleep 
+2018-11-27 11:47:24,919 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:24,919 INFO  [Log] 从Excel文件中读取到的操作值：3000 
+2018-11-27 11:47:27,919 INFO  [Log] 休眠：3秒 
+2018-11-27 11:47:28,006 INFO  [Log] 从Excel文件中读取到的关键字：Assert_String 
+2018-11-27 11:47:28,007 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:28,007 INFO  [Log] 从Excel文件中读取到的操作值：您的邮件已发送 
+2018-11-27 11:47:28,045 INFO  [Log] 断言成功 
+2018-11-27 11:47:28,105 INFO  [Log] 从Excel文件中读取到的关键字：close_browser 
+2018-11-27 11:47:28,105 INFO  [Log] 从Excel文件中读取到的定位表达式：0.0 
+2018-11-27 11:47:28,105 INFO  [Log] 从Excel文件中读取到的操作值：无 
+2018-11-27 11:47:30,263 INFO  [Log] 关闭浏览器 
+2018-11-27 11:47:30,321 INFO  [Log] ----------------------     SendMail01 执行结束     ---------------------- 

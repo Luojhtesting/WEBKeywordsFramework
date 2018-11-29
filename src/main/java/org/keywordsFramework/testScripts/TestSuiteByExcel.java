@@ -26,7 +26,7 @@ public class TestSuiteByExcel {
     public static boolean testResult;
 
 
-    //单测试用例执行
+    //测试用例脚本
     @Test
     public void TestSuite() throws Exception {
 
