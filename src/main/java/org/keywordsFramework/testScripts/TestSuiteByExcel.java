@@ -61,13 +61,13 @@ public class TestSuiteByExcel {
                     execute_Actions();
                     //当用例步骤执行失败后，写入失败信息，执行下个用例
                     if (testResult == false) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestRuiteTestRuselt, "测试用例执行失败");
+                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestSuiteTestResult, "测试用例执行失败");
                         Log.endTestCase(testCaseID);
                         break;
                     }
                     //当用例步骤执行成功后，写入成功信息
                     if (testResult == true) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestRuiteTestRuselt, "测试用例执行成功");
+                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestSuiteTestResult, "测试用例执行成功");
 
                     }
 
@@ -134,10 +134,10 @@ public class TestSuiteByExcel {
                 if (method[i].getName().equals(keyword)) {
                     method[i].invoke(keyWordsAction, locatorExpression, value);
                     if (testResult == true) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestRuselt, "测试用例步骤执行成功");
+                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestResult, "测试用例步骤执行成功");
                         break;
                     } else {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestRuselt, "测试用例步骤执行失败");
+                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestResult, "测试用例步骤执行失败");
                         KeyWordsAction.error_browser("","");
                         break;
                     }
@@ -155,9 +155,11 @@ public class TestSuiteByExcel {
         DOMConfigurator.configure("log4j.xml");
     }
 
+    /*
 	@DataProvider(name = "testData")
 	public static Object[][] data() throws IOException {
 		//参数化文件设置
 		return ExcelUtil.getTestData("./src/main/java/org/keywordsFramework/data/参数化数据.xlsx", "Sheet1");
 	}
+	*/
 }

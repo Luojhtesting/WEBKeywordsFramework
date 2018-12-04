@@ -19,6 +19,8 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.keywordsFramework.configuration.Constans;
 import org.keywordsFramework.testScripts.TestSuiteByExcel;
 
+import static org.apache.poi.ss.usermodel.CellType.STRING;
+
 public class ExcelUtil {
     private static XSSFWorkbook ExcelWorkbook;
     private static XSSFSheet ExcelSheet;
@@ -40,21 +42,6 @@ public class ExcelUtil {
         }
     }
 
-    //获取Excel文件路径
-    public static void setExcelFile(String path,String sheetName) throws Exception {
-        FileInputStream file;
-        try {
-            file = new FileInputStream(path);
-            ExcelWorkbook = new XSSFWorkbook(file);
-            ExcelSheet = ExcelWorkbook.getSheet(sheetName);
-            file.close();
-        } catch (Exception e) {
-            TestSuiteByExcel.testResult = false;
-            System.out.println("Excel路径获取失败");
-            e.printStackTrace();
-        }
-    }
-
     //读取指定Sheet中的单元格函数，只支持.xlsx
     public static String getCellData(String sheetName, int rowN, int cellN) {
 
@@ -62,7 +49,7 @@ public class ExcelUtil {
 
         try {
             Cell = ExcelSheet.getRow(rowN).getCell(cellN);
-            String cellData = Cell.getCellType() == XSSFCell.CELL_TYPE_STRING ? Cell.getStringCellValue()
+            String cellData = Cell.getCellTypeEnum() == STRING ? Cell.getStringCellValue()
                     : Cell.getNumericCellValue() + "";
             return cellData;
         } catch (Exception e) {
@@ -70,11 +57,6 @@ public class ExcelUtil {
             e.printStackTrace();
             return "";
         }
-    }
-
-    //
-    public static int getLastRowNum() {
-        return ExcelSheet.getLastRowNum();
     }
 
     //知道获取Sheet中的数据总行数

@@ -16,13 +16,13 @@ public class Constans {
 
     public static final int Col_ActionValue = 5;
 
-    public static final int Col_TestStepTestRuselt = 6;
+    public static final int Col_TestStepTestResult = 6;
 
     public static final int Col_RunFlag = 2;
 
-    public static final int Col_TestRuiteTestRuselt = 3;
+    public static final int Col_TestSuiteTestResult = 3;
 
-    public static final String Sheet_TestSteps = "Sheet1";
+    public static final String Sheet_TestSteps = "测试用例";
 
     public static final String Sheet_TestSuite = "测试用例集合";
 
