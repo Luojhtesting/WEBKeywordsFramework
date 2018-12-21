@@ -12,9 +12,6 @@ target/
 *.iml
 *.iws
 
-# model ignore
-model/
-*.jpg
-*.rar
-
+# test ignore
+src/test
 
