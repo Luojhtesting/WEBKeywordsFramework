@@ -2,15 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8c47e1-0bc8-4a2f-bc0d-e0ccf369e9aa" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/3d66Model-589817-files-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/3d66Model-589817-files-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Date.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateBaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/InterfaceAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/databaseConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ObjectMap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectMap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestLogfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestLogfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/参数化数据.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExcelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/Constans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/Constans.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/KeyWordsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/KeyWordsAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/testScripts/TestSuiteByExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/testScripts/TestSuiteByExcel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/ExcelUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/KeyBoardUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/KeyBoardUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ExcelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExcelTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,56 +43,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestSuiteByExcel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestSuiteByExcel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+            <state relative-caret-position="944">
+              <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3421#3435#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExcelTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ExcelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XSSFCell.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="703" column="20" selection-start-line="703" selection-start-column="20" selection-end-line="703" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#executeActions#0;class#TestSuiteByExcel#0" />
               </folding>
             </state>
           </provider>
@@ -87,40 +65,102 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExcelUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-764">
-              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6288#6298#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2774">
+              <caret line="166" column="44" selection-start-line="166" selection-start-column="44" selection-end-line="166" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constans.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java">
+      <file leaf-file-name="ObjectMap.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectMap.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="51" />
+            <state relative-caret-position="460">
+              <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TestLogfile.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestLogfile.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="KeyWordsAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+            <state relative-caret-position="275">
+              <caret line="222" column="13" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#navigate#0;class#KeyWordsAction#0" />
+                <element signature="method#click#0;class#KeyWordsAction#0" />
+                <element signature="method#input#0;class#KeyWordsAction#0" />
+                <element signature="method#switchToIframe#0;class#KeyWordsAction#0" />
+                <element signature="method#sleep#0;class#KeyWordsAction#0" />
+                <element signature="method#turnOutIframe#0;class#KeyWordsAction#0" />
+                <element signature="method#pressCtrlV#0;class#KeyWordsAction#0" />
+                <element signature="method#pressTab#0;class#KeyWordsAction#0" />
+                <element signature="method#pressEnter#0;class#KeyWordsAction#0" />
+                <element signature="method#clickSendMailButton#0;class#KeyWordsAction#0" />
+                <element signature="method#assertContainString#0;class#KeyWordsAction#0" />
+                <element signature="method#closeBrowser#0;class#KeyWordsAction#0" />
+                <element signature="method#errorBrowser#0;class#KeyWordsAction#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WEBKeywordsFramework.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WEBKeywordsFramework.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/Log.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#590#591#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateBaseUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateBaseUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="893">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="databaseConfig.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/databaseConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -136,6 +176,8 @@
     <findStrings>
       <find>\\</find>
       <find>switch_to_Iframe</find>
+      <find>updataModelPage.updateModelName</find>
+      <find>updateModel</find>
     </findStrings>
     <replaceStrings>
       <replace>/</replace>
@@ -147,21 +189,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ObjectMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/WaitUitl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" />
-        <option value="$PROJECT_DIR$/TestLogfile.log" />
-        <option value="$PROJECT_DIR$/ObjectMap.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/TestCase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" />
+        <option value="$PROJECT_DIR$/databaseConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Date.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/ExcelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/PostTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DateTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/InterfaceAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateBaseUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/TestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/databaseConfig.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCase.java" />
+        <option value="$PROJECT_DIR$/TestLogfile.log" />
+        <option value="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" />
+        <option value="$PROJECT_DIR$/ObjectMap.properties" />
       </list>
     </option>
   </component>
@@ -192,8 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +254,11 @@
             <path>
               <item name="dr" type="b2602c69:ProjectViewProjectNode" />
               <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,52 +281,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="keywordsFramework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="keywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="keywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="testScripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="keywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,8 +299,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Program Files\Git\workspace\WEBKeywordsFramework\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.keywordsFramework.configuration" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Program Files\Git\workspace\WEBKeywordsFramework\model" />
+      <recent name="C:\Program Files\Git\workspace\WEBKeywordsFramework" />
+      <recent name="C:\Program Files\Git\workspace\WEBKeywordsFramework\src\main\resources\mapper" />
       <recent name="C:\Program Files\Git\workspace\WEBKeywordsFramework\src\main\java\org\keywordsFramework\data" />
     </key>
   </component>
@@ -299,7 +324,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestSuiteByExcel.TestSuite">
+  <component name="RunManager" selected="TestNG.TestSuiteByExcel.testSuite">
+    <configuration name="DateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DateTest" />
+      <module name="WEBKeywordsFramework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="TestCase (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.configuration.TestCase" />
+      <module name="WEBKeywordsFramework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.keywordsFramework.configuration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TestCase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestCase" />
+      <module name="WEBKeywordsFramework" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -319,7 +365,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestSuiteByExcel (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSuiteByExcel.testSuite" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WEBKeywordsFramework" />
       <extension name="coverage">
         <pattern>
@@ -332,123 +378,7 @@
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="org.keywordsFramework.testScripts" />
       <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.testScripts.TestSuiteByExcel" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestSuiteByExcel (2)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEBKeywordsFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.keywordsFramework.testScripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="org.keywordsFramework.testScripts" />
-      <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.testScripts.TestSuiteByExcel" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestSuiteByExcel (3)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEBKeywordsFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.keywordsFramework.testScripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="org.keywordsFramework.testScripts" />
-      <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.testScripts.TestSuiteByExcel" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestSuiteByExcel (4)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEBKeywordsFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.keywordsFramework.testScripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="org.keywordsFramework.testScripts" />
-      <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.testScripts.TestSuiteByExcel" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestSuiteByExcel.TestSuite" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="WEBKeywordsFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.keywordsFramework.testScripts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="org.keywordsFramework.testScripts" />
-      <option name="MAIN_CLASS_NAME" value="org.keywordsFramework.testScripts.TestSuiteByExcel" />
-      <option name="METHOD_NAME" value="TestSuite" />
+      <option name="METHOD_NAME" value="testSuite" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -486,20 +416,49 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="org.keywordsFramework.data" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WEBKeywordsFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.keywordsFramework.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="org.keywordsFramework.data" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <list>
-      <item itemvalue="TestNG.TestSuiteByExcel.TestSuite" />
-      <item itemvalue="TestNG.TestSuiteByExcel (3)" />
-      <item itemvalue="TestNG.TestSuiteByExcel (1)" />
-      <item itemvalue="TestNG.TestSuiteByExcel (4)" />
-      <item itemvalue="TestNG.TestSuiteByExcel (2)" />
+      <item itemvalue="TestNG.TestSuiteByExcel.testSuite" />
+      <item itemvalue="TestNG.org.keywordsFramework.data" />
+      <item itemvalue="Application.TestCase" />
+      <item itemvalue="Application.DateTest" />
+      <item itemvalue="Application.TestCase (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestSuiteByExcel.TestSuite" />
-        <item itemvalue="TestNG.TestSuiteByExcel (2)" />
-        <item itemvalue="TestNG.TestSuiteByExcel (4)" />
-        <item itemvalue="TestNG.TestSuiteByExcel (1)" />
-        <item itemvalue="TestNG.TestSuiteByExcel (3)" />
+        <item itemvalue="TestNG.TestSuiteByExcel.testSuite" />
+        <item itemvalue="Application.TestCase" />
+        <item itemvalue="Application.TestCase (1)" />
+        <item itemvalue="Application.DateTest" />
+        <item itemvalue="TestNG.org.keywordsFramework.data" />
       </list>
     </recent_temporary>
   </component>
@@ -518,44 +477,60 @@
       <workItem from="1543461389383" duration="4339000" />
       <workItem from="1543823674337" duration="7942000" />
       <workItem from="1543831849719" duration="571000" />
-      <workItem from="1543909270714" duration="3431000" />
+      <workItem from="1543909270714" duration="9300000" />
+      <workItem from="1544170897964" duration="450000" />
+      <workItem from="1544175927874" duration="1093000" />
+      <workItem from="1544236057588" duration="1688000" />
+      <workItem from="1544237793502" duration="24056000" />
+      <workItem from="1544405404571" duration="9431000" />
+      <workItem from="1544510143273" duration="5182000" />
+      <workItem from="1544583603642" duration="11440000" />
+      <workItem from="1544609810598" duration="146000" />
+      <workItem from="1544666437776" duration="10012000" />
+      <workItem from="1544780499195" duration="1277000" />
+      <workItem from="1545034068214" duration="17980000" />
+      <workItem from="1545055223299" duration="1450000" />
+      <workItem from="1545056886700" duration="348000" />
+      <workItem from="1545120857429" duration="5457000" />
+      <workItem from="1545216871286" duration="3806000" />
+      <workItem from="1545356133305" duration="6761000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSuiteByExcel_TestSuite - 2018.12.03 at 18h 07m 25s.xml">
-      <configuration name="TestSuiteByExcel.TestSuite" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.19 at 19h 17m 31s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel - 2018.12.03 at 18h 09m 12s.xml">
-      <configuration name="TestSuiteByExcel" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.19 at 22h 07m 32s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_TestSuite - 2018.12.03 at 18h 10m 27s.xml">
-      <configuration name="TestSuiteByExcel.TestSuite" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.19 at 22h 09m 14s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_TestSuite - 2018.12.03 at 18h 12m 30s.xml">
-      <configuration name="TestSuiteByExcel.TestSuite" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 09h 48m 40s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_(3) - 2018.12.03 at 18h 14m 46s.xml">
-      <configuration name="TestSuiteByExcel (3)" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 10h 19m 11s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_(1) - 2018.12.03 at 18h 16m 01s.xml">
-      <configuration name="TestSuiteByExcel (1)" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 10h 27m 45s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_(4) - 2018.12.04 at 16h 17m 11s.xml">
-      <configuration name="TestSuiteByExcel (4)" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 10h 31m 56s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_(2) - 2018.12.04 at 16h 21m 42s.xml">
-      <configuration name="TestSuiteByExcel (2)" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 10h 47m 51s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_TestSuite - 2018.12.04 at 16h 36m 14s.xml">
-      <configuration name="TestSuiteByExcel.TestSuite" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 10h 59m 28s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestSuiteByExcel_TestSuite - 2018.12.04 at 16h 37m 14s.xml">
-      <configuration name="TestSuiteByExcel.TestSuite" configurationId="TestNG" />
+    <history-entry file="TestSuiteByExcel_testSuite - 2018.12.21 at 11h 31m 11s.xml">
+      <configuration name="TestSuiteByExcel.testSuite" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21917000" />
+    <option name="totallyTimeSpent" value="128363000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,36 +543,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32897604" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32897604" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21428572" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28976035" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897604" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,96 +586,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ObjectMap.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestLogfile.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#3435#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2337">
-          <caret line="215" column="39" selection-start-line="215" selection-start-column="33" selection-end-line="215" selection-end-column="39" />
-          <folding>
-            <element signature="initializer##0;class#KeyWordsAction#0" />
-            <element signature="method#open_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#navigate#0;class#KeyWordsAction#0" />
-            <element signature="method#click#0;class#KeyWordsAction#0" />
-            <element signature="method#input#0;class#KeyWordsAction#0" />
-            <element signature="method#switch_to_Iframe#0;class#KeyWordsAction#0" />
-            <element signature="method#sleep#0;class#KeyWordsAction#0" />
-            <element signature="method#turn_out_Iframe#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Tab#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Enter#0;class#KeyWordsAction#0" />
-            <element signature="method#click_SendMailButton#0;class#KeyWordsAction#0" />
-            <element signature="method#Assert_String#0;class#KeyWordsAction#0" />
-            <element signature="method#close_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#error_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#takesScreenhot#0;class#KeyWordsAction#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestLogfile.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/WaitUitl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -749,10 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#3435#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -760,9 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,21 +662,20 @@
         <state relative-caret-position="418">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="38" />
           <folding>
-            <element signature="initializer##0;class#KeyWordsAction#0" />
-            <element signature="method#open_browser#0;class#KeyWordsAction#0" />
+            <element signature="imports" expanded="true" />
             <element signature="method#navigate#0;class#KeyWordsAction#0" />
             <element signature="method#click#0;class#KeyWordsAction#0" />
             <element signature="method#input#0;class#KeyWordsAction#0" />
-            <element signature="method#switch_to_Iframe#0;class#KeyWordsAction#0" />
+            <element signature="method#switchToIframe#0;class#KeyWordsAction#0" />
             <element signature="method#sleep#0;class#KeyWordsAction#0" />
-            <element signature="method#turn_out_Iframe#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Tab#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Enter#0;class#KeyWordsAction#0" />
-            <element signature="method#click_SendMailButton#0;class#KeyWordsAction#0" />
-            <element signature="method#Assert_String#0;class#KeyWordsAction#0" />
-            <element signature="method#close_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#error_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#takesScreenhot#0;class#KeyWordsAction#0" />
+            <element signature="method#turnOutIframe#0;class#KeyWordsAction#0" />
+            <element signature="method#pressCtrlV#0;class#KeyWordsAction#0" />
+            <element signature="method#pressTab#0;class#KeyWordsAction#0" />
+            <element signature="method#pressEnter#0;class#KeyWordsAction#0" />
+            <element signature="method#clickSendMailButton#0;class#KeyWordsAction#0" />
+            <element signature="method#assertContainString#0;class#KeyWordsAction#0" />
+            <element signature="method#closeBrowser#0;class#KeyWordsAction#0" />
+            <element signature="method#errorBrowser#0;class#KeyWordsAction#0" />
           </folding>
         </state>
       </provider>
@@ -844,9 +720,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,10 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2603">
           <caret line="156" column="29" selection-start-line="156" selection-start-column="29" selection-end-line="156" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6288#6298#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -865,10 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2280">
           <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3421#3435#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,22 +766,87 @@
         <state relative-caret-position="361">
           <caret line="37" column="61" lean-forward="true" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
           <folding>
-            <element signature="initializer##0;class#KeyWordsAction#0" />
-            <element signature="method#open_browser#0;class#KeyWordsAction#0" />
+            <element signature="imports" expanded="true" />
             <element signature="method#navigate#0;class#KeyWordsAction#0" />
             <element signature="method#click#0;class#KeyWordsAction#0" />
             <element signature="method#input#0;class#KeyWordsAction#0" />
-            <element signature="method#switch_to_Iframe#0;class#KeyWordsAction#0" />
+            <element signature="method#switchToIframe#0;class#KeyWordsAction#0" />
             <element signature="method#sleep#0;class#KeyWordsAction#0" />
-            <element signature="method#turn_out_Iframe#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Tab#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Enter#0;class#KeyWordsAction#0" />
-            <element signature="method#click_SendMailButton#0;class#KeyWordsAction#0" />
-            <element signature="method#Assert_String#0;class#KeyWordsAction#0" />
-            <element signature="method#close_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#error_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#takesScreenhot#0;class#KeyWordsAction#0" />
+            <element signature="method#turnOutIframe#0;class#KeyWordsAction#0" />
+            <element signature="method#pressCtrlV#0;class#KeyWordsAction#0" />
+            <element signature="method#pressTab#0;class#KeyWordsAction#0" />
+            <element signature="method#pressEnter#0;class#KeyWordsAction#0" />
+            <element signature="method#clickSendMailButton#0;class#KeyWordsAction#0" />
+            <element signature="method#assertContainString#0;class#KeyWordsAction#0" />
+            <element signature="method#closeBrowser#0;class#KeyWordsAction#0" />
+            <element signature="method#errorBrowser#0;class#KeyWordsAction#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WEBKeywordsFramework.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk1.8.0_11/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="1091" column="19" selection-start-line="1091" selection-start-column="19" selection-end-line="1091" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12027">
+          <caret line="703" column="20" selection-start-line="703" selection-start-column="20" selection-end-line="703" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExcelTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -934,30 +864,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="266">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectMap.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java">
+    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk1.8.0_11/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="-199">
+          <caret line="531" column="22" selection-start-line="531" selection-start-column="22" selection-end-line="531" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/TestCase.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/PostTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/InterfaceAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestLogfile.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/databaseConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateBaseUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2774">
+          <caret line="166" column="44" selection-start-line="166" selection-start-column="44" selection-end-line="166" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
             <element signature="e#557#558#0" expanded="true" />
             <element signature="e#590#591#0" expanded="true" />
@@ -971,118 +971,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="128" column="44" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
+        <state relative-caret-position="275">
+          <caret line="222" column="13" selection-start-line="222" selection-start-column="13" selection-end-line="222" selection-end-column="13" />
           <folding>
-            <element signature="initializer##0;class#KeyWordsAction#0" />
-            <element signature="method#open_browser#0;class#KeyWordsAction#0" />
+            <element signature="imports" expanded="true" />
             <element signature="method#navigate#0;class#KeyWordsAction#0" />
             <element signature="method#click#0;class#KeyWordsAction#0" />
             <element signature="method#input#0;class#KeyWordsAction#0" />
-            <element signature="method#switch_to_Iframe#0;class#KeyWordsAction#0" />
+            <element signature="method#switchToIframe#0;class#KeyWordsAction#0" />
             <element signature="method#sleep#0;class#KeyWordsAction#0" />
-            <element signature="method#turn_out_Iframe#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Tab#0;class#KeyWordsAction#0" />
-            <element signature="method#press_Enter#0;class#KeyWordsAction#0" />
-            <element signature="method#click_SendMailButton#0;class#KeyWordsAction#0" />
-            <element signature="method#Assert_String#0;class#KeyWordsAction#0" />
-            <element signature="method#close_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#error_browser#0;class#KeyWordsAction#0" />
-            <element signature="method#takesScreenhot#0;class#KeyWordsAction#0" />
+            <element signature="method#turnOutIframe#0;class#KeyWordsAction#0" />
+            <element signature="method#pressCtrlV#0;class#KeyWordsAction#0" />
+            <element signature="method#pressTab#0;class#KeyWordsAction#0" />
+            <element signature="method#pressEnter#0;class#KeyWordsAction#0" />
+            <element signature="method#clickSendMailButton#0;class#KeyWordsAction#0" />
+            <element signature="method#assertContainString#0;class#KeyWordsAction#0" />
+            <element signature="method#closeBrowser#0;class#KeyWordsAction#0" />
+            <element signature="method#errorBrowser#0;class#KeyWordsAction#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/FileUtil.java">
+    <entry file="file://$PROJECT_DIR$/ObjectMap.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestLogfile.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="70" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WEBKeywordsFramework.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../Java/jdk1.8.0_11/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="1091" column="19" selection-start-line="1091" selection-start-column="19" selection-end-line="1091" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="40" column="27" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.17/poi-ooxml-3.17-sources.jar!/org/apache/poi/xssf/usermodel/XSSFCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="703" column="20" selection-start-line="703" selection-start-column="20" selection-end-line="703" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ExcelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="98" selection-start-line="98" selection-end-line="98" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        <state relative-caret-position="944">
+          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3421#3435#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-764">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6288#6298#0" expanded="true" />
+            <element signature="method#executeActions#0;class#TestSuiteByExcel#0" />
           </folding>
         </state>
       </provider>

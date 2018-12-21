@@ -7,6 +7,7 @@ import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
 public class KeyBoardUtil {
+
     //Tab键方法封装
     public static void pressTabKey() {
         Robot robot = null;
@@ -46,5 +47,4 @@ public class KeyBoardUtil {
         robot.keyRelease(KeyEvent.VK_CONTROL);
         robot.keyRelease(KeyEvent.VK_V);
     }
-
 }

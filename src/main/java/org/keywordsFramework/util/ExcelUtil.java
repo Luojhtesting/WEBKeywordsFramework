@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -85,14 +86,14 @@ public class ExcelUtil {
         }
     }
 
-    //获取指定Sheet中某个测试用例步骤的个数
+    //获取测试用例末尾步骤数
     public static int getTestCaseLastStepRow(String sheetName,String testCaseID, int testCaseStartRowNumber) {
         try {
             ExcelSheet = ExcelWorkbook.getSheet(sheetName);
             for (int i=testCaseStartRowNumber;i<=ExcelUtil.getRowCount(sheetName)-1;i++) {
                 if(!testCaseID.equals(ExcelUtil.getCellData(sheetName, i, Constans.Col_TestCaseID))) {
                     int number = i;
-                    System.out.println(number);
+                    //System.out.println(number);
                     return number;
                 }
             }
@@ -110,10 +111,10 @@ public class ExcelUtil {
         try {
             ExcelSheet = ExcelWorkbook.getSheet(sheetName);
             XSSFCellStyle cellStyle = ExcelWorkbook.createCellStyle();;
-            //cellStyle.setBorderBottom(XSSFCellStyle.BORDER_THIN); //下边框
-            //cellStyle.setBorderLeft(XSSFCellStyle.BORDER_THIN);//左边框
-            //cellStyle.setBorderTop(XSSFCellStyle.BORDER_THIN);//上边框
-            //cellStyle.setBorderRight(XSSFCellStyle.BORDER_THIN);//右边框
+            cellStyle.setBorderBottom(BorderStyle.THIN); //下边框
+            cellStyle.setBorderLeft(BorderStyle.THIN);//左边框
+            cellStyle.setBorderTop(BorderStyle.THIN);//上边框
+            cellStyle.setBorderRight(BorderStyle.THIN);//右边框
             Row = ExcelSheet.getRow(rowNum);
             Cell = Row.getCell((short)cellNum);
 
@@ -177,5 +178,21 @@ public class ExcelUtil {
         return results;
 
     }
+
+    //测试结果清除
+    public static void testResultsClear() {
+        //suite清理
+        for (int i=1;i<ExcelUtil.getRowCount(Constans.Sheet_TestSuite)+1;i++) {
+            ExcelUtil.setCellData(Constans.Sheet_TestSuite,i,Constans.Col_TestSuiteTestResult,"");
+        }
+
+        //步骤清理
+        for (int i=1;i<ExcelUtil.getRowCount(Constans.Sheet_TestSteps)+1;i++) {
+            ExcelUtil.setCellData(Constans.Sheet_TestSteps,i,Constans.Col_TestStepTestResult,"");
+        }
+    }
+
+    //
+
 
 }

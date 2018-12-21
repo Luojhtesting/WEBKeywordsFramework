@@ -26,7 +26,7 @@ public class KeyWordsAction {
     }
 
     //选择浏览器
-    public static void open_browser(String string,String browser) {
+    public static void openBrowser(String string,String browser) {
         try {
             if(browser.equals("ie")) {
                 dr = new InternetExplorerDriver();
@@ -87,7 +87,7 @@ public class KeyWordsAction {
     }
 
     //转入Iframe
-    public static void switch_to_Iframe(String string,String id) {
+    public static void switchToIframe(String string,String id) {
         try {
             dr.switchTo().frame(id);
             Log.info("转入ID：" + id + "Iframe页面成功");
@@ -111,7 +111,7 @@ public class KeyWordsAction {
     }
 
     //转出Iframe
-    public static void turn_out_Iframe(String string1,String string) {
+    public static void turnOutIframe(String string1,String string) {
         try {
             dr.switchTo().defaultContent();
             Log.info("转出Iframe");
@@ -123,7 +123,7 @@ public class KeyWordsAction {
     }
 
     //键盘Ctrl+V复制数据
-    public static void press_CtrlV(String string1,String string) {
+    public static void pressCtrlV(String string1,String string) {
         try {
             KeyBoardUtil.setAndCtrlVClipboardData(string);
             Log.info("使用剪切板复制数据：" + string);
@@ -135,7 +135,7 @@ public class KeyWordsAction {
     }
 
     //键盘Tab
-    public static void press_Tab(String string1,String string2) {
+    public static void pressTab(String string1,String string2) {
         try {
             KeyBoardUtil.pressTabKey();
             Log.info("按下Tab键");
@@ -147,7 +147,7 @@ public class KeyWordsAction {
     }
 
     //按下Enter键
-    public static void press_Enter(String string1,String string2) {
+    public static void pressEnter(String string1,String string2) {
         try {
             KeyBoardUtil.pressEnterKey();
             Log.info("按下Enter键");
@@ -159,7 +159,7 @@ public class KeyWordsAction {
     }
 
     //点击发送
-    public static void click_SendMailButton(String string1,String string) {
+    public static void clickSendMailButton(String string1,String string) {
         try {
             List<WebElement> buttons = dr.findElements(By.xpath("//*[@id=\"toolbar\"]/div/a[1]"));
             buttons.get(0).click();
@@ -171,8 +171,8 @@ public class KeyWordsAction {
         }
     }
 
-    //Assert_String
-    public static void Assert_String(String string1,String assertString) {
+    //页面包含字符串
+    public static void assertContainString(String string1,String assertString) {
         try {
             Assert.assertTrue(dr.getPageSource().contains(assertString));
             Log.info("断言成功");
@@ -183,8 +183,20 @@ public class KeyWordsAction {
         }
     }
 
+    //页面不包含字符串
+    public static void assertNotContainString(String string1,String assertString) {
+        try {
+            Assert.assertFalse(dr.getPageSource().contains(assertString));
+            Log.info("断言成功");
+        } catch (AssertionError e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("断言异常，具体异常信息：" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
     //关闭浏览器
-    public static void close_browser(String string1,String string) {
+    public static void closeBrowser(String string1,String string) {
         try {
             dr.quit();
             Log.info("关闭浏览器");
@@ -196,7 +208,7 @@ public class KeyWordsAction {
     }
 
     //异常关闭浏览器
-    public static void error_browser(String string1,String string2) {
+    public static void errorBrowser(String string1,String string2) {
         try {
             dr.quit();
             Log.error("关闭浏览器");
@@ -227,6 +239,48 @@ public class KeyWordsAction {
             TestSuiteByExcel.testResult = false;
             Log.info("截取图片失败，具体异常信息：" + e.getMessage());
             e.printStackTrace();
+        }
+    }
+
+    //获取元素文本，断言类容
+    public static void getElementTextAssert(String locatorExpression,String assertString) {
+        try {
+            String elementText = dr.findElement(objectMap.getLocator(locatorExpression)).getText();
+            Assert.assertEquals(elementText, assertString);
+            Log.info("断言成功");
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("断言异常，具体异常信息：" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    //模型渲染状态
+    public static void concludeModelApplyState(String pass,String modelName) {
+        try {
+            int modelId = DateBaseUtil.selectModelId(modelName);
+
+            for (int i=0;i<3;i++) {
+                if (InterfaceAction.getModelAppleState(modelId) == 2) {
+                    Log.info("模型渲染完成");
+                    break;
+                } else if (InterfaceAction.getModelAppleState(modelId) == 1) {
+                    Thread.sleep(300000);
+                } else {
+                    TestSuiteByExcel.testResult = false;
+                    Log.info("渲染失败");
+                    break;
+                }
+            }
+
+            if (InterfaceAction.getModelAppleState(modelId) != 2) {
+                TestSuiteByExcel.testResult = false;
+                Log.info("渲染失败");
+            }
+
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("具体异常信息：" + e.getMessage());
         }
     }
 }

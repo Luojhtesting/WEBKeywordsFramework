@@ -26,5 +26,11 @@ public class Constans {
 
     public static final String Sheet_TestSuite = "测试用例集合";
 
+    //模型接口访问路径
+    public static final String Backstage_Model_API_Path = "http://tumaxapi.to8to.com/admin/goods/model/detail";
+
+    //登陆接口路径
+    public static final String Backstage_Login_Path = "http://tumaxapi.to8to.com/admin/common/login";
+
 
 }
