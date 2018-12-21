@@ -104,7 +104,7 @@ public class TestSuiteByExcel {
 
     }
 
-    /*@AfterClass
+    @AfterClass
     public void afterClass() {
         DateBaseUtil.getSqlSession();//建立连接
         String[] modelNameArray = {"TestModelCyan","TestModelCyanUpdate"};//删除的模型名称
@@ -112,5 +112,5 @@ public class TestSuiteByExcel {
         DateBaseUtil.deleteTestModel(modelNameArray);//执行删除sql
         DateBaseUtil.deleteTestMaterial(materialNameArray);//执行删除sql
         DateBaseUtil.closeSqlSession();//关闭连接
-    }*/
+    }
 }

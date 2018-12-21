@@ -31,10 +31,13 @@ public class KeyWordsAction {
             if(browser.equals("ie")) {
                 dr = new InternetExplorerDriver();
                 Log.info("IE浏览器启动成功");
-            } else if(browser.equals("firefox")) {
+            } else if(browser.toLowerCase().equals("firefox")) {
+                System.setProperty("webdriver.gecko.driver",
+                        "./tools/geckodriver.exe");
                 dr = new FirefoxDriver();
+                dr.manage().window().maximize();
                 Log.info("firefox浏览器启动成功");
-            } else if(browser.equals("chrome")) {
+            } else if(browser.toLowerCase().equals("chrome")) {
                 System.setProperty("webdriver.chrome.driver",
                         "./tools/chromedriver.exe");
                 dr = new ChromeDriver();
