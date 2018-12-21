@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb8c47e1-0bc8-4a2f-bc0d-e0ccf369e9aa" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/3d66Model-589817-files-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/3d66Model-589817-files-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Date.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/DateBaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/InterfaceAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/databaseConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SQLMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ObjectMap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectMap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestLogfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestLogfile.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/Constans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/configuration/KeyWordsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/data/参数化数据.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/ExcelUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/keywordsFramework/util/KeyBoardUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ExcelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExcelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/Constans.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/Constans.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/KeyWordsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/configuration/KeyWordsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/testScripts/TestSuiteByExcel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/testScripts/TestSuiteByExcel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/ExcelUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/ExcelUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/KeyBoardUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/keywordsFramework/util/KeyBoardUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ExcelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ExcelTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestCase.class" afterDir="false" />
-    </list>
+    <list default="true" id="cb8c47e1-0bc8-4a2f-bc0d-e0ccf369e9aa" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestSuiteByExcel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestSuiteByExcel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/keywordsFramework/testScripts/TestSuiteByExcel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="944">
@@ -52,6 +22,15 @@
                 <element signature="imports" expanded="true" />
                 <element signature="method#executeActions#0;class#TestSuiteByExcel#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -135,18 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="893">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,11 +217,6 @@
             <path>
               <item name="dr" type="b2602c69:ProjectViewProjectNode" />
               <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WEBKeywordsFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dr" type="b2602c69:ProjectViewProjectNode" />
@@ -493,7 +455,7 @@
       <workItem from="1545056886700" duration="348000" />
       <workItem from="1545120857429" duration="5457000" />
       <workItem from="1545216871286" duration="3806000" />
-      <workItem from="1545356133305" duration="6761000" />
+      <workItem from="1545356133305" duration="7890000" />
     </task>
     <servers />
   </component>
@@ -530,7 +492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128363000" />
+    <option name="totallyTimeSpent" value="129492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -555,10 +517,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28976035" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897604" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2531983" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -829,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ExcelTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -1007,6 +962,13 @@
             <element signature="imports" expanded="true" />
             <element signature="method#executeActions#0;class#TestSuiteByExcel#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
