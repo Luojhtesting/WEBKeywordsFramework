@@ -269,6 +269,8 @@ public class KeyWordsAction {
                     break;
                 } else if (InterfaceAction.getModelAppleState(modelId) == 1) {
                     Thread.sleep(300000);
+                } else if (InterfaceAction.getModelAppleState(modelId) == 0) {
+                    Thread.sleep(300000);
                 } else {
                     TestSuiteByExcel.testResult = false;
                     Log.info("渲染失败");
@@ -284,6 +286,25 @@ public class KeyWordsAction {
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
             Log.info("具体异常信息：" + e.getMessage());
+        }
+    }
+
+    //元素中包含字符串
+    public static void assertElementContainString(String locatorExpression,String assertString) {
+        try {
+            String[] arr = assertString.split(",");
+
+            for (String s : arr) {
+                if (dr.findElement(objectMap.getLocator(locatorExpression)).getText().contains(s)) {
+                    Log.info("元素中包含" + s +"字符");
+                } else {
+                    TestSuiteByExcel.testResult = false;
+                    Log.info("元素中不包含" + s +"字符");
+                }
+            }
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("异常信息：" + e.getMessage());
         }
     }
 }

@@ -26,6 +26,9 @@ public class TestSuiteByExcel {
     public static String testCaseRunFlag;
     public static boolean testResult;
 
+    String[] modelNameArray = {"TestModelCyan","TestModelCyanUpdate"};//删除的模型名称
+    String[] materialNameArray = {"TestMaterialCyan","TestMaterialCyanUpdate"};//删除的模型名称
+
     //测试用例脚本
     @Test
     public void testSuite() throws Exception {
@@ -101,14 +104,13 @@ public class TestSuiteByExcel {
     public void beforeClass() {
         //日志信息打印
         DOMConfigurator.configure("log4j.xml");
-
+        DateBaseUtil.getSqlSession();//建立连接
+        DateBaseUtil.deleteTestModel(modelNameArray);//执行删除sql
+        DateBaseUtil.deleteTestMaterial(materialNameArray);//执行删除sql
     }
 
     @AfterClass
     public void afterClass() {
-        DateBaseUtil.getSqlSession();//建立连接
-        String[] modelNameArray = {"TestModelCyan","TestModelCyanUpdate"};//删除的模型名称
-        String[] materialNameArray = {"TestMaterialCyan","TestMaterialCyanUpdate"};//删除的模型名称
         DateBaseUtil.deleteTestModel(modelNameArray);//执行删除sql
         DateBaseUtil.deleteTestMaterial(materialNameArray);//执行删除sql
         DateBaseUtil.closeSqlSession();//关闭连接
