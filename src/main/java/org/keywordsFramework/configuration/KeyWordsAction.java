@@ -26,7 +26,7 @@ public class KeyWordsAction {
     }
 
     //选择浏览器
-    public static void openBrowser(String string,String browser) {
+    public static void openBrowser(String locatorExpression,String browser) {
         try {
             if(browser.equals("ie")) {
                 dr = new InternetExplorerDriver();
@@ -53,7 +53,7 @@ public class KeyWordsAction {
     }
 
     //url路径
-    public static void navigate(String string,String url) {
+    public static void navigate(String locatorExpression,String url) {
         try {
             dr.get(url);
             Log.info("地址：" + url + "打开成功");
@@ -90,7 +90,7 @@ public class KeyWordsAction {
     }
 
     //转入Iframe
-    public static void switchToIframe(String string,String id) {
+    public static void switchToIframe(String locatorExpression,String id) {
         try {
             dr.switchTo().frame(id);
             Log.info("转入ID：" + id + "Iframe页面成功");
@@ -102,7 +102,7 @@ public class KeyWordsAction {
     }
 
     //等待时间
-    public static void sleep(String string,String sleepTime) {
+    public static void sleep(String locatorExpression,String sleepTime) {
         try {
             WaitUitl.sleep(Integer.parseInt(sleepTime));
             Log.info("休眠：" + Integer.parseInt(sleepTime)/1000 + "秒");
@@ -114,7 +114,7 @@ public class KeyWordsAction {
     }
 
     //转出Iframe
-    public static void turnOutIframe(String string1,String string) {
+    public static void turnOutIframe(String locatorExpression,String string) {
         try {
             dr.switchTo().defaultContent();
             Log.info("转出Iframe");
@@ -126,7 +126,7 @@ public class KeyWordsAction {
     }
 
     //键盘Ctrl+V复制数据
-    public static void pressCtrlV(String string1,String string) {
+    public static void pressCtrlV(String locatorExpression,String string) {
         try {
             KeyBoardUtil.setAndCtrlVClipboardData(string);
             Log.info("使用剪切板复制数据：" + string);
@@ -138,7 +138,7 @@ public class KeyWordsAction {
     }
 
     //键盘Tab
-    public static void pressTab(String string1,String string2) {
+    public static void pressTab(String locatorExpression,String string) {
         try {
             KeyBoardUtil.pressTabKey();
             Log.info("按下Tab键");
@@ -150,7 +150,7 @@ public class KeyWordsAction {
     }
 
     //按下Enter键
-    public static void pressEnter(String string1,String string2) {
+    public static void pressEnter(String locatorExpression,String string) {
         try {
             KeyBoardUtil.pressEnterKey();
             Log.info("按下Enter键");
@@ -162,7 +162,7 @@ public class KeyWordsAction {
     }
 
     //点击发送
-    public static void clickSendMailButton(String string1,String string) {
+    public static void clickSendMailButton(String locatorExpression,String string) {
         try {
             List<WebElement> buttons = dr.findElements(By.xpath("//*[@id=\"toolbar\"]/div/a[1]"));
             buttons.get(0).click();
@@ -175,7 +175,7 @@ public class KeyWordsAction {
     }
 
     //页面包含字符串
-    public static void assertContainString(String string1,String assertString) {
+    public static void assertContainString(String locatorExpression,String assertString) {
         try {
             Assert.assertTrue(dr.getPageSource().contains(assertString));
             Log.info("断言成功");
@@ -187,7 +187,7 @@ public class KeyWordsAction {
     }
 
     //页面不包含字符串
-    public static void assertNotContainString(String string1,String assertString) {
+    public static void assertNotContainString(String locatorExpression,String assertString) {
         try {
             Assert.assertFalse(dr.getPageSource().contains(assertString));
             Log.info("断言成功");
@@ -199,7 +199,7 @@ public class KeyWordsAction {
     }
 
     //关闭浏览器
-    public static void closeBrowser(String string1,String string) {
+    public static void closeBrowser(String locatorExpression,String string) {
         try {
             dr.quit();
             Log.info("关闭浏览器");
@@ -211,7 +211,7 @@ public class KeyWordsAction {
     }
 
     //异常关闭浏览器
-    public static void errorBrowser(String string1,String string2) {
+    public static void errorBrowser(String locatorExpression,String string) {
         try {
             dr.quit();
             Log.error("关闭浏览器");
@@ -222,7 +222,7 @@ public class KeyWordsAction {
     }
 
     //截图
-    public static void takesScreenhot(String string1,String TestCaseName) {
+    public static void takesScreenhot(String locatorExpression,String TestCaseName) {
         try {
             Date date = new Date();
             String picDir = "E:\\" + TestCaseName + "\\" + String.valueOf(DateUtil.getYear(date))
@@ -259,7 +259,7 @@ public class KeyWordsAction {
     }
 
     //模型渲染状态
-    public static void concludeModelApplyState(String pass,String modelName) {
+    public static void concludeModelApplyState(String locatorExpression,String modelName) {
         try {
             int modelId = DateBaseUtil.selectModelId(modelName);
 
