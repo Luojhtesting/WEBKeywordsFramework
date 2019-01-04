@@ -39,7 +39,7 @@ public class TestSuiteByExcel {
         //获取Excel路径并生成实例
         String excelPath = Constans.Path_ExcelFile;
         ExcelUtil.setExcelFile(excelPath);
-        ExcelUtil.testResultsClear();
+        ExcelUtil.testResultsClear();//清理测试用例结果
 
         //获取测试用例套件中的测试用例总数
         int testCasesCount = ExcelUtil.getRowCount(Constans.Sheet_TestSuite);
@@ -96,7 +96,7 @@ public class TestSuiteByExcel {
                 }
             }
         } catch (Exception e) {
-            Assert.fail("测试用例执行失败");
+            e.printStackTrace();
         }
     }
 
@@ -107,6 +107,7 @@ public class TestSuiteByExcel {
         DateBaseUtil.getSqlSession();//建立连接
         DateBaseUtil.deleteTestModel(modelNameArray);//执行删除sql
         DateBaseUtil.deleteTestMaterial(materialNameArray);//执行删除sql
+
     }
 
     @AfterClass

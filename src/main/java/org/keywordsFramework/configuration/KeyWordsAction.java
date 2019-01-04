@@ -3,6 +3,7 @@ package org.keywordsFramework.configuration;
 import java.io.File;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -36,12 +37,14 @@ public class KeyWordsAction {
                         "./tools/geckodriver.exe");
                 dr = new FirefoxDriver();
                 dr.manage().window().maximize();
+                dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 Log.info("firefox浏览器启动成功");
             } else if(browser.toLowerCase().equals("chrome")) {
                 System.setProperty("webdriver.chrome.driver",
                         "./tools/chromedriver.exe");
                 dr = new ChromeDriver();
                 dr.manage().window().maximize();
+                dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 Log.info("chrome浏览器启动成功");
             } else {
                 System.out.println("只支持“IE”、“firefox”、“chrome”浏览器");
