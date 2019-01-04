@@ -32,5 +32,7 @@ public class Constans {
     //登陆接口路径
     public static final String Backstage_Login_Path = "http://tumaxapi.to8to.com/admin/common/login";
 
+    //创建用户
+    public static final String Create_User = "cyan.luo";
 
 }

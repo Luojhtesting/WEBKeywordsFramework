@@ -24,4 +24,12 @@
             #{arr}
         </foreach>
     </delete>
+
+    <delete id="deleteGoodsData" parameterType="String">
+        delete from to8to_flash_goods WHERE createuser = #{username}
+    </delete>
+
+    <delete id="deleteMaterialData" parameterType="String">
+        delete from to8to_material WHERE createuser = #{username}
+    </delete>
 </mapper>

@@ -60,4 +60,24 @@ public class DateBaseUtil {
         }
     }
 
+    //根据创建用户，删除goods表数据
+    public static void deleteGoodsByCreaterUser(String userName) {
+        try {
+            sqlSession.delete("deleteGoodsData", userName);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //根据创建用户，删除Material表数据
+    public static void deleteMaterialByCreaterUser(String userName) {
+        try {
+            sqlSession.delete("deleteMaterialData", userName);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
