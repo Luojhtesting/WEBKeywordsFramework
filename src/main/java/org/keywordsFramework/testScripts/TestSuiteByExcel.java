@@ -26,9 +26,6 @@ public class TestSuiteByExcel {
     public static String testCaseRunFlag;
     public static boolean testResult;
 
-    String[] modelNameArray = {"TestModelCyan","TestModelCyanUpdate"};//删除的模型名称
-    String[] materialNameArray = {"TestMaterialCyan","TestMaterialCyanUpdate"};//删除的模型名称
-
     //测试用例脚本
     @Test
     public void testSuite() throws Exception {

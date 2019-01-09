@@ -9,11 +9,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.keywordsFramework.testScripts.TestSuiteByExcel;
 import org.keywordsFramework.util.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -256,7 +252,7 @@ public class KeyWordsAction {
             Log.info("断言成功");
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
-            Log.info("断言异常，具体异常信息：" + e.getMessage());
+
             e.printStackTrace();
         }
     }
@@ -309,5 +305,29 @@ public class KeyWordsAction {
             TestSuiteByExcel.testResult = false;
             Log.info("异常信息：" + e.getMessage());
         }
+    }
+
+    //滚动条滚动到顶端
+    public static void scrollBarTop(String locatorExpression,String string) {
+        try {
+            ((JavascriptExecutor) dr).executeScript("window.scrollTo(0, 0)");
+            Log.info("滚动条移动到顶端");
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("断言异常，具体异常信息：" + e.getMessage());
+        }
+
+    }
+
+    //滚动条滚动到底部
+    public static void scrollBarBottom(String locatorExpression,String string) {
+        try {
+            ((JavascriptExecutor) dr).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+            Log.info("滚动条移动到底部");
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("断言异常，具体异常信息：" + e.getMessage());
+        }
+
     }
 }
