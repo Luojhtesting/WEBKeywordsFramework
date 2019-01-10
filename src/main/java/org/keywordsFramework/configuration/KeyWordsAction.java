@@ -248,12 +248,16 @@ public class KeyWordsAction {
     public static void getElementTextAssert(String locatorExpression,String assertString) {
         try {
             String elementText = dr.findElement(objectMap.getLocator(locatorExpression)).getText();
-            Assert.assertEquals(elementText, assertString);
-            Log.info("断言成功");
+            if (assertString.equals(elementText)) {
+                Log.info("断言成功");
+            } else {
+                TestSuiteByExcel.testResult = false;
+                Log.info("断言结果：" + assertString + "!=" + elementText);
+            }
+
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
-
-            e.printStackTrace();
+            Log.info("异常信息：" + e.getMessage());
         }
     }
 
