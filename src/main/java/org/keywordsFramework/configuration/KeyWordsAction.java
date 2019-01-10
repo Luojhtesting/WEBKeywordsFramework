@@ -15,6 +15,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 
+import static org.keywordsFramework.util.InterfaceAction.createFeedbackResult;
+import static org.keywordsFramework.util.InterfaceAction.getAuth;
+
 public class KeyWordsAction {
     public static WebDriver dr;
     private static ObjectMap objectMap = new ObjectMap(Constans.Path_ConfigurationFile);
@@ -333,5 +336,20 @@ public class KeyWordsAction {
             Log.info("断言异常，具体异常信息：" + e.getMessage());
         }
 
+    }
+
+    //创建用户反馈测试数据
+    public static void createFeedback(String locatorExpression,String uid) {
+        try {
+            int i = Integer.parseInt(uid);
+            if (createFeedbackResult(getAuth(i))) {
+                Log.info("创建用户反馈测试数据成功");
+            } else {
+                TestSuiteByExcel.testResult = false;
+            }
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("创建失败信息：" + e.getMessage());
+        }
     }
 }
