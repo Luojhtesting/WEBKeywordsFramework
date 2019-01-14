@@ -102,15 +102,15 @@ public class TestSuiteByExcel {
         //日志信息打印
         DOMConfigurator.configure("log4j.xml");
         DateBaseUtil.getSqlSession();//建立连接
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.Create_User);//执行删除sql
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.Create_User);//执行删除sql
+        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
+        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
 
     }
 
     @AfterClass
     public void afterClass() {
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.Create_User);//执行删除sql
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.Create_User);//执行删除sql
+        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
+        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
         DateBaseUtil.closeSqlSession();//关闭连接
     }
 }
