@@ -35,4 +35,7 @@ public class Constans {
     //创建用户
     public static final String CREATE_USER = "cyan.luo";
 
+    //用户反馈UID
+    public static final int FEEDBACK_UID = 1725353;
+
 }

@@ -13,7 +13,7 @@ public class DateBaseUtil {
     private static SqlSession sqlSession;
 
     //建立数据库连接
-    public static SqlSession getSqlSession() {
+    public static void connectionSqlSession() {
 
         try {
             Reader reader = Resources.getResourceAsReader("databaseConfig.xml");
@@ -22,7 +22,6 @@ public class DateBaseUtil {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return sqlSession;
     }
 
     // 关闭连接
@@ -80,4 +79,13 @@ public class DateBaseUtil {
         }
     }
 
+    //删除用户反馈测试数据
+    public static void deleteFeedbackData(int uid) {
+        try {
+            sqlSession.delete("deleteFeedbackData", uid);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -101,14 +101,15 @@ public class TestSuiteByExcel {
     public void beforeClass() {
         //日志信息打印
         DOMConfigurator.configure("log4j.xml");
-        DateBaseUtil.getSqlSession();//建立连接
+        DateBaseUtil.connectionSqlSession();//建立连接
         DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
         DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
-
+        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈
     }
 
     @AfterClass
     public void afterClass() {
+        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈
         DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
         DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
         DateBaseUtil.closeSqlSession();//关闭连接
