@@ -270,12 +270,12 @@ public class KeyWordsAction {
             int modelId = DateBaseUtil.selectModelId(modelName);
 
             for (int i=0;i<3;i++) {
-                if (InterfaceAction.getModelAppleState(modelId) == 2) {
+                if (InterfaceAction.getModelRenderState(modelId) == 2) {
                     Log.info("模型渲染完成");
                     break;
-                } else if (InterfaceAction.getModelAppleState(modelId) == 1) {
+                } else if (InterfaceAction.getModelRenderState(modelId) == 1) {
                     Thread.sleep(300000);
-                } else if (InterfaceAction.getModelAppleState(modelId) == 0) {
+                } else if (InterfaceAction.getModelRenderState(modelId) == 0) {
                     Thread.sleep(300000);
                 } else {
                     TestSuiteByExcel.testResult = false;
@@ -284,7 +284,7 @@ public class KeyWordsAction {
                 }
             }
 
-            if (InterfaceAction.getModelAppleState(modelId) != 2) {
+            if (InterfaceAction.getModelRenderState(modelId) != 2) {
                 TestSuiteByExcel.testResult = false;
                 Log.info("渲染失败");
             }

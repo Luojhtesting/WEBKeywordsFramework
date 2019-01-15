@@ -39,35 +39,35 @@ public class TestSuiteByExcel {
         ExcelUtil.testResultsClear();//清理测试用例结果
 
         //获取测试用例套件中的测试用例总数
-        int testCasesCount = ExcelUtil.getRowCount(Constans.Sheet_TestSuite);
+        int testCasesCount = ExcelUtil.getRowCount(Constans.SHEET_TEST_SUITE);
         //遍历拿到测试用例ID与测试用例是否执行判断值
         for(int testCaseNo=1;testCaseNo<=testCasesCount;testCaseNo++) {
-            testCaseID = ExcelUtil.getCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestCaseID);
-            testCaseRunFlag = ExcelUtil.getCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_RunFlag);
+            testCaseID = ExcelUtil.getCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_CASE_ID);
+            testCaseRunFlag = ExcelUtil.getCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_RUN_FLAG);
 
             if(testCaseRunFlag.equalsIgnoreCase("y")) {
                 Log.startTestCase(testCaseID);
                 testResult = true;
-                testStep = ExcelUtil.getFirstRowContainsTestCaseID(Constans.Sheet_TestSteps, testCaseID, Constans.Col_TestCaseID);
-                testLastStep = ExcelUtil.getTestCaseLastStepRow(Constans.Sheet_TestSteps, testCaseID, testStep);
+                testStep = ExcelUtil.getFirstRowContainsTestCaseID(Constans.SHEET_TEST_STEPS, testCaseID, Constans.COL_TEST_CASE_ID);
+                testLastStep = ExcelUtil.getTestCaseLastStepRow(Constans.SHEET_TEST_STEPS, testCaseID, testStep);
 
                 //获取测试用例的关键字，定位表达式，操作值
                 for (;testStep<testLastStep;testStep++) {
-                    keyword = ExcelUtil.getCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_KeyWordAction);
+                    keyword = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_KEY_WORD_ACTION);
                     Log.info("从Excel文件中读取到的关键字：" + keyword);
-                    locatorExpression = ExcelUtil.getCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_LocatorExpression);
+                    locatorExpression = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_LOCATOR_EXPRESSION);
                     Log.info("从Excel文件中读取到的定位表达式：" + locatorExpression);
-                    value = ExcelUtil.getCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_ActionValue);
+                    value = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_ACTION_VALUE);
                     Log.info("从Excel文件中读取到的操作值：" + value);
                     executeActions();
                     //当用例步骤执行失败后，写入失败信息，执行下个用例
                     if (testResult == false) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestSuiteTestResult, "测试用例执行失败");
+                        ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_SUITE_TEST_RESULT, "测试用例执行失败");
                         break;
                     }
                     //当用例步骤执行成功后，写入成功信息
                     if (testResult == true) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSuite, testCaseNo, Constans.Col_TestSuiteTestResult, "测试用例执行成功");
+                        ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_SUITE_TEST_RESULT, "测试用例执行成功");
                     }
                 }
                 Log.endTestCase(testCaseID);
@@ -82,10 +82,10 @@ public class TestSuiteByExcel {
                 if (method[i].getName().equals(keyword)) {
                     method[i].invoke(keyWordsAction, locatorExpression, value);
                     if (testResult == true) {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestResult, "测试用例步骤执行成功");
+                        ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_TEST_STEP_TEST_RESULT, "测试用例步骤执行成功");
                         break;
                     } else {
-                        ExcelUtil.setCellData(Constans.Sheet_TestSteps, testStep, Constans.Col_TestStepTestResult, "测试用例步骤执行失败");
+                        ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_TEST_STEP_TEST_RESULT, "测试用例步骤执行失败");
                         //KeyWordsAction.error_browser("","");
                         break;
                     }

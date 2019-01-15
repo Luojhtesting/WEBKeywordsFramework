@@ -16,7 +16,7 @@ public class InterfaceAction {
             .contentType("application/json")
             .body(json)
         .when()
-            .post(Constans.Backstage_Login_Path)
+            .post(Constans.BACKSTAGE_LOGIN_PATH)
         .then()
             .statusCode(200)
         .extract()
@@ -28,14 +28,15 @@ public class InterfaceAction {
     }
 
     //获取渲染状态
-    public static int getModelAppleState(int modelId) {
+    public static int getModelRenderState(int modelId) {
         String json = "{\"id\":" + modelId + "}";
         Response response = given()
             .contentType("application/json")
             .header("TOKEN",getBackstageToken())
             .body(json)
         .when()
-            .post(Constans.Backstage_Model_API_Path)
+            .post(Constans.BACKSTAGE_MODEL_API_PATH)
+            .prettyPeek()
         .then()
             .statusCode(200)
             .extract()

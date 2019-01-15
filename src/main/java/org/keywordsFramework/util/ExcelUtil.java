@@ -91,7 +91,7 @@ public class ExcelUtil {
         try {
             ExcelSheet = ExcelWorkbook.getSheet(sheetName);
             for (int i=testCaseStartRowNumber;i<=ExcelUtil.getRowCount(sheetName)-1;i++) {
-                if(!testCaseID.equals(ExcelUtil.getCellData(sheetName, i, Constans.Col_TestCaseID))) {
+                if(!testCaseID.equals(ExcelUtil.getCellData(sheetName, i, Constans.COL_TEST_CASE_ID))) {
                     int number = i;
                     //System.out.println(number);
                     return number;
@@ -182,13 +182,13 @@ public class ExcelUtil {
     //测试结果清除
     public static void testResultsClear() {
         //suite清理
-        for (int i=1;i<ExcelUtil.getRowCount(Constans.Sheet_TestSuite)+1;i++) {
-            ExcelUtil.setCellData(Constans.Sheet_TestSuite,i,Constans.Col_TestSuiteTestResult,"");
+        for (int i=1;i<ExcelUtil.getRowCount(Constans.SHEET_TEST_SUITE)+1;i++) {
+            ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE,i,Constans.COL_TEST_SUITE_TEST_RESULT,"");
         }
 
         //步骤清理
-        for (int i=1;i<ExcelUtil.getRowCount(Constans.Sheet_TestSteps)+1;i++) {
-            ExcelUtil.setCellData(Constans.Sheet_TestSteps,i,Constans.Col_TestStepTestResult,"");
+        for (int i=1;i<ExcelUtil.getRowCount(Constans.SHEET_TEST_STEPS)+1;i++) {
+            ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS,i,Constans.COL_TEST_STEP_TEST_RESULT,"");
         }
     }
 

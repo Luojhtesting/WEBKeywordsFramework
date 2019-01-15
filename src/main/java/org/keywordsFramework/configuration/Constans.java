@@ -8,29 +8,29 @@ public class Constans {
     public static final String Path_ConfigurationFile = "./ObjectMap.properties";
 
     //测试数据sheet中的列号常量设定
-    public static final int Col_TestCaseID = 0;
+    public static final int COL_TEST_CASE_ID = 0;
 
-    public static final int Col_KeyWordAction = 3;
+    public static final int COL_KEY_WORD_ACTION = 3;
 
-    public static final int Col_LocatorExpression = 4;
+    public static final int COL_LOCATOR_EXPRESSION = 4;
 
-    public static final int Col_ActionValue = 5;
+    public static final int COL_ACTION_VALUE = 5;
 
-    public static final int Col_TestStepTestResult = 6;
+    public static final int COL_TEST_STEP_TEST_RESULT = 6;
 
-    public static final int Col_RunFlag = 2;
+    public static final int COL_RUN_FLAG = 2;
 
-    public static final int Col_TestSuiteTestResult = 3;
+    public static final int COL_TEST_SUITE_TEST_RESULT = 3;
 
-    public static final String Sheet_TestSteps = "测试用例";
+    public static final String SHEET_TEST_STEPS = "测试用例";
 
-    public static final String Sheet_TestSuite = "测试用例集合";
+    public static final String SHEET_TEST_SUITE = "测试用例集合";
 
     //模型接口访问路径
-    public static final String Backstage_Model_API_Path = "http://tumaxapi.to8to.com/admin/goods/model/detail";
+    public static final String BACKSTAGE_MODEL_API_PATH = "http://tumaxapi.to8to.com/admin/goods/model/detail";
 
     //登陆接口路径
-    public static final String Backstage_Login_Path = "http://tumaxapi.to8to.com/admin/common/login";
+    public static final String BACKSTAGE_LOGIN_PATH = "http://tumaxapi.to8to.com/admin/common/login";
 
     //创建用户
     public static final String CREATE_USER = "cyan.luo";
