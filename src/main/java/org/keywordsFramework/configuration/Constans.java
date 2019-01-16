@@ -1,5 +1,7 @@
 package org.keywordsFramework.configuration;
 
+import java.util.Arrays;
+
 public class Constans {
     //测试用例路径
     public static final String Path_ExcelFile = "./src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx";
@@ -37,5 +39,8 @@ public class Constans {
 
     //用户反馈UID
     public static final int FEEDBACK_UID = 1725353;
+
+    //品牌名称
+    public static final String[] BRANDS_NAME_ARRAY = {"TestBrandCyanUpdate","TestBrandCyan"};
 
 }

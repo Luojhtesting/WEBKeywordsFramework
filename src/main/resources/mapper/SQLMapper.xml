@@ -36,4 +36,11 @@
     <delete id="deleteFeedbackData" parameterType="int">
         DELETE FROM `to8to_flash_feedback` WHERE uid = #{uid}
     </delete>
+
+    <delete id="deleteBrandsData">
+        DELETE FROM to8to_flash_brands WHERE NAME IN
+        <foreach collection="array" item="arr" open="(" separator="," close=")">
+            #{arr}
+        </foreach>
+    </delete>
 </mapper>

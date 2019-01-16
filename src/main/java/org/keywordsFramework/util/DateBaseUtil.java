@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Arrays;
 
 public class DateBaseUtil {
 
@@ -83,6 +84,16 @@ public class DateBaseUtil {
     public static void deleteFeedbackData(int uid) {
         try {
             sqlSession.delete("deleteFeedbackData", uid);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //删除品牌测试数据
+    public static void deleteBrandsData(String[] arr) {
+        try {
+            sqlSession.delete("deleteBrandsData", arr);
             sqlSession.commit();
         } catch (Exception e) {
             e.printStackTrace();

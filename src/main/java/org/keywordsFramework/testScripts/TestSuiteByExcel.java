@@ -102,16 +102,18 @@ public class TestSuiteByExcel {
         //日志信息打印
         DOMConfigurator.configure("log4j.xml");
         DateBaseUtil.connectionSqlSession();//建立连接
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
-        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈
+        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
+        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
+        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
+        DateBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
     }
 
     @AfterClass
     public void afterClass() {
-        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//执行删除sql
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//执行删除sql
+        DateBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
+        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
+        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
+        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
         DateBaseUtil.closeSqlSession();//关闭连接
     }
 }
