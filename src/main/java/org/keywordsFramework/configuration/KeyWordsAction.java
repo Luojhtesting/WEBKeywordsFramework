@@ -352,4 +352,18 @@ public class KeyWordsAction {
             Log.info("创建失败信息：" + e.getMessage());
         }
     }
+
+    //单个输入字符串
+    public static void ForSendKeys(String locatorExpression,String string) {
+        try {
+            dr.findElement(objectMap.getLocator(locatorExpression)).clear();
+            for (int i = 0; i < string.length(); i++) {
+                dr.findElement(objectMap.getLocator(locatorExpression)).sendKeys(string.charAt(i)+"");
+            }
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("在" + locatorExpression + "元素中，输入：" + string + "失败，具体异常信息：" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }
