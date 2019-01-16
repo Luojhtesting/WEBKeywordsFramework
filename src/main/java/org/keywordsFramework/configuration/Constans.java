@@ -12,20 +12,28 @@ public class Constans {
     //测试数据sheet中的列号常量设定
     public static final int COL_TEST_CASE_ID = 0;
 
+    //关键字参数
     public static final int COL_KEY_WORD_ACTION = 3;
 
+    //测试步骤元素表达式
     public static final int COL_LOCATOR_EXPRESSION = 4;
 
+    //测试步骤入参
     public static final int COL_ACTION_VALUE = 5;
 
+    //测试步骤执行结果
     public static final int COL_TEST_STEP_TEST_RESULT = 6;
 
+    //是否执行标识
     public static final int COL_RUN_FLAG = 2;
 
+    //用例执行结果
     public static final int COL_TEST_SUITE_TEST_RESULT = 3;
 
+    //Sheet页测试用例名称
     public static final String SHEET_TEST_STEPS = "测试用例";
 
+    //Sheet页测试套件名称
     public static final String SHEET_TEST_SUITE = "测试用例集合";
 
     //模型接口访问路径
