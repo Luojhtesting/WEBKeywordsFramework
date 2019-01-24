@@ -13,6 +13,14 @@ public class Log {
         Log.info("----------------------     " + testCaseName + " " + "执行结束" +"     ----------------------");
     }
 
+    public static void retryStartTestCase(String testCaseName, int retryCount) {
+        Log.info("----------------------     " + testCaseName + " " + "失败重试，第" + retryCount +"次     ----------------------");
+    }
+
+    public static void retryEndTestCase(String testCaseName, int retryCount) {
+        Log.info("----------------------     " + testCaseName + " " + "重试" + retryCount + "次执行结束" + "     ----------------------");
+    }
+
     public static void info(String message) {
         Log.info(message);
     }

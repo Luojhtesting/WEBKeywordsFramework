@@ -15,6 +15,9 @@ public class Constans {
     //关键字参数
     public static final int COL_KEY_WORD_ACTION = 3;
 
+    //失败重试参数
+    public static final int COL_RETRY_COUNT = 3;
+
     //测试步骤元素表达式
     public static final int COL_LOCATOR_EXPRESSION = 4;
 
@@ -28,7 +31,7 @@ public class Constans {
     public static final int COL_RUN_FLAG = 2;
 
     //用例执行结果
-    public static final int COL_TEST_SUITE_TEST_RESULT = 3;
+    public static final int COL_TEST_SUITE_TEST_RESULT = 4;
 
     //Sheet页测试用例名称
     public static final String SHEET_TEST_STEPS = "测试用例";

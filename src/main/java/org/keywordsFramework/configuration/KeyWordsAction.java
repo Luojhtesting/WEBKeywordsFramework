@@ -13,6 +13,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.os.WindowsUtils;
 import org.testng.Assert;
 
 import static org.keywordsFramework.util.InterfaceAction.createFeedbackResult;
@@ -342,11 +343,7 @@ public class KeyWordsAction {
     public static void createFeedback(String locatorExpression,String uid) {
         try {
             int i = Integer.parseInt(uid);
-            if (createFeedbackResult(getAuth(i))) {
-                Log.info("创建用户反馈测试数据成功");
-            } else {
-                TestSuiteByExcel.testResult = false;
-            }
+            Log.info("创建用户反馈测试数据成功");
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
             Log.info("创建失败信息：" + e.getMessage());

@@ -44,6 +44,9 @@ public class TestSuiteByExcel {
         for(int testCaseNo=1;testCaseNo<=testCasesCount;testCaseNo++) {
             testCaseID = ExcelUtil.getCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_CASE_ID);
             testCaseRunFlag = ExcelUtil.getCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_RUN_FLAG);
+            String testCaseRetryCount = ExcelUtil.getCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_RETRY_COUNT);
+            String stringValue = testCaseRetryCount.split("\\.")[0];
+            int retryCount = Integer.valueOf(stringValue).intValue();
 
             if(testCaseRunFlag.equalsIgnoreCase("y")) {
                 Log.startTestCase(testCaseID);
@@ -71,6 +74,36 @@ public class TestSuiteByExcel {
                     }
                 }
                 Log.endTestCase(testCaseID);
+
+                if (testResult == false && retryCount > 0) {
+                    for (int no = 1;no<=retryCount;no++) {
+                        Log.retryStartTestCase(testCaseID, no);
+                        testResult = true;
+                        testStep = ExcelUtil.getFirstRowContainsTestCaseID(Constans.SHEET_TEST_STEPS, testCaseID, Constans.COL_TEST_CASE_ID);
+                        testLastStep = ExcelUtil.getTestCaseLastStepRow(Constans.SHEET_TEST_STEPS, testCaseID, testStep);
+                        for (;testStep<testLastStep;testStep++) {
+                            keyword = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_KEY_WORD_ACTION);
+                            Log.info("从Excel文件中读取到的关键字：" + keyword);
+                            locatorExpression = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_LOCATOR_EXPRESSION);
+                            Log.info("从Excel文件中读取到的定位表达式：" + locatorExpression);
+                            value = ExcelUtil.getCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_ACTION_VALUE);
+                            Log.info("从Excel文件中读取到的操作值：" + value);
+                            executeActions();
+                            //当用例步骤执行失败后，写入失败信息，执行下个用例
+                            if (testResult == false) {
+                                ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_SUITE_TEST_RESULT, "测试用例执行失败");
+                                break;
+                            }
+                        }
+                        //当用例步骤执行成功后，写入成功信息
+                        if (testResult == true) {
+                            ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE, testCaseNo, Constans.COL_TEST_SUITE_TEST_RESULT, "测试用例执行成功");
+                            Log.retryEndTestCase(testCaseID, no);
+                            break;
+                        }
+                        Log.retryEndTestCase(testCaseID, no);
+                    }
+                }
             }
         }
     }
@@ -86,7 +119,6 @@ public class TestSuiteByExcel {
                         break;
                     } else {
                         ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS, testStep, Constans.COL_TEST_STEP_TEST_RESULT, "测试用例步骤执行失败");
-                        //KeyWordsAction.error_browser("","");
                         break;
                     }
 
