@@ -1,6 +1,7 @@
 package org.keywordsFramework.configuration;
 
 import java.io.File;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -185,7 +186,6 @@ public class KeyWordsAction {
         } catch (AssertionError e) {
             TestSuiteByExcel.testResult = false;
             Log.info("断言异常，具体异常信息：" + e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -197,7 +197,6 @@ public class KeyWordsAction {
         } catch (AssertionError e) {
             TestSuiteByExcel.testResult = false;
             Log.info("断言异常，具体异常信息：" + e.getMessage());
-            e.printStackTrace();
         }
     }
 
@@ -302,12 +301,8 @@ public class KeyWordsAction {
             String[] arr = assertString.split(",");
 
             for (String s : arr) {
-                if (dr.findElement(objectMap.getLocator(locatorExpression)).getText().contains(s)) {
-                    Log.info("元素中包含" + s +"字符");
-                } else {
-                    TestSuiteByExcel.testResult = false;
-                    Log.info("元素中不包含" + s +"字符");
-                }
+                dr.findElement(objectMap.getLocator(locatorExpression)).getText().contains(s);
+                Log.info("元素中包含" + s + "字符");
             }
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
@@ -343,7 +338,12 @@ public class KeyWordsAction {
     public static void createFeedback(String locatorExpression,String uid) {
         try {
             int i = Integer.parseInt(uid);
-            Log.info("创建用户反馈测试数据成功");
+            if (InterfaceAction.createFeedbackResult(InterfaceAction.getAuth(i))) {
+                Log.info("创建用户反馈测试数据成功");
+            } else {
+                TestSuiteByExcel.testResult = false;
+                Log.info("创建用户反馈测试数据失败");
+            }
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
             Log.info("创建失败信息：" + e.getMessage());
@@ -351,7 +351,7 @@ public class KeyWordsAction {
     }
 
     //单个输入字符串
-    public static void ForSendKeys(String locatorExpression,String string) {
+    public static void forSendKeys(String locatorExpression,String string) {
         try {
             dr.findElement(objectMap.getLocator(locatorExpression)).clear();
             for (int i = 0; i < string.length(); i++) {
@@ -361,6 +361,24 @@ public class KeyWordsAction {
             TestSuiteByExcel.testResult = false;
             Log.info("在" + locatorExpression + "元素中，输入：" + string + "失败，具体异常信息：" + e.getMessage());
             e.printStackTrace();
+        }
+    }
+
+    //导出文件与页面数据总数比对
+    public static void exportDataContrast(String locatorExpression,String path) {
+        try {
+            String filePath = path.split(">")[0];
+            String sheetPath = path.split(">")[1];
+            int excelCount = ExcelUtil.getSheetCount(filePath, sheetPath);
+            int pageCount = Integer.parseInt(dr.findElement(objectMap.getLocator(locatorExpression)).getText().replaceAll("\\D",""));
+            if (excelCount == pageCount) {
+                Log.info("比对信息：" + excelCount + "=" + pageCount);
+            } else {
+                throw new Exception(excelCount + "!=" + pageCount);
+            }
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("比对失败异常信息：" + e.getMessage());
         }
     }
 }

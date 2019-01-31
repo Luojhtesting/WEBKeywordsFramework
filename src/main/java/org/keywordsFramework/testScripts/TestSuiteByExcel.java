@@ -75,6 +75,7 @@ public class TestSuiteByExcel {
                 }
                 Log.endTestCase(testCaseID);
 
+                //失败重试
                 if (testResult == false && retryCount > 0) {
                     for (int no = 1;no<=retryCount;no++) {
                         Log.retryStartTestCase(testCaseID, no);

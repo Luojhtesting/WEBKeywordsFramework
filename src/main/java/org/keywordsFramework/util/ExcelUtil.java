@@ -192,6 +192,18 @@ public class ExcelUtil {
         }
     }
 
+    //获取sheet页数据总行
+    public static int getSheetCount(String path, String sheetName) {
+        try {
+            File file = new File(path);
+            XSSFWorkbook workbook = new XSSFWorkbook(file);
+            XSSFSheet sheet = workbook.getSheet(sheetName);
+            return sheet.getLastRowNum();
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            e.printStackTrace();
+            return -1;
+        }
 
-
+    }
 }

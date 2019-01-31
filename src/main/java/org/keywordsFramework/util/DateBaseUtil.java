@@ -99,4 +99,14 @@ public class DateBaseUtil {
             e.printStackTrace();
         }
     }
+
+    //删除贴图商品数据
+    public static void deleteMapGoodsDate(String userName) {
+        try {
+            sqlSession.delete("deleteMapGoodsData", userName);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

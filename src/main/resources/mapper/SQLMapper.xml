@@ -33,6 +33,10 @@
         delete from to8to_material WHERE createuser = #{username}
     </delete>
 
+    <delete id="deleteMapGoodsData" parameterType="String">
+        delete from to8to_flash_goods_commodity WHERE createuser = #{username}
+    </delete>
+
     <delete id="deleteFeedbackData" parameterType="int">
         DELETE FROM `to8to_flash_feedback` WHERE uid = #{uid}
     </delete>
