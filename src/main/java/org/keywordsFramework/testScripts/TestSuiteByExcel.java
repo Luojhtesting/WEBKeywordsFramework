@@ -7,6 +7,7 @@ import org.keywordsFramework.configuration.Constans;
 import org.keywordsFramework.configuration.KeyWordsAction;
 import org.keywordsFramework.util.DateBaseUtil;
 import org.keywordsFramework.util.ExcelUtil;
+import org.keywordsFramework.util.FileUtil;
 import org.keywordsFramework.util.Log;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -139,6 +140,7 @@ public class TestSuiteByExcel {
         DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
         DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
         DateBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
+        FileUtil.createDir(Constans.DOWNLOADS_PATH);//创建文件下载目录
     }
 
     @AfterClass

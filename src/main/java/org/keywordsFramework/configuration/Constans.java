@@ -54,4 +54,7 @@ public class Constans {
     //品牌名称
     public static final String[] BRANDS_NAME_ARRAY = {"TestBrandCyanUpdate","TestBrandCyan"};
 
+    //ChromeDriver下载地址
+    public static final String DOWNLOADS_PATH= "F:/Downloads";
+
 }

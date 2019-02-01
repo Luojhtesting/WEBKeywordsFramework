@@ -3,6 +3,7 @@ package org.keywordsFramework.configuration;
 import java.io.File;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -12,9 +13,11 @@ import org.keywordsFramework.testScripts.TestSuiteByExcel;
 import org.keywordsFramework.util.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.os.WindowsUtils;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 
 import static org.keywordsFramework.util.InterfaceAction.createFeedbackResult;
@@ -43,7 +46,8 @@ public class KeyWordsAction {
             } else if(browser.toLowerCase().equals("chrome")) {
                 System.setProperty("webdriver.chrome.driver",
                         "./tools/chromedriver.exe");
-                dr = new ChromeDriver();
+                DesiredCapabilities caps = setDownloadsPath();
+                dr = new ChromeDriver(caps);
                 dr.manage().window().maximize();
                 dr.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
                 Log.info("chrome浏览器启动成功");
@@ -365,7 +369,7 @@ public class KeyWordsAction {
     }
 
     //导出文件与页面数据总数比对
-    public static void exportDataContrast(String locatorExpression,String path) {
+    public static void exportDataContrast(String locatorExpression, String path) {
         try {
             String filePath = path.split(">")[0];
             String sheetPath = path.split(">")[1];
@@ -380,5 +384,16 @@ public class KeyWordsAction {
             TestSuiteByExcel.testResult = false;
             Log.info("比对失败异常信息：" + e.getMessage());
         }
+    }
+
+    //获取ChromeDriver下载地址配置
+    private static DesiredCapabilities setDownloadsPath() {
+        HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+        chromePrefs.put("download.default_directory", Constans.DOWNLOADS_PATH);
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("prefs", chromePrefs);
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability(ChromeOptions.CAPABILITY, options);
+        return caps;
     }
 }
