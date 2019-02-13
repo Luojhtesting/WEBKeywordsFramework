@@ -386,7 +386,19 @@ public class KeyWordsAction {
         }
     }
 
-    //获取ChromeDriver下载地址配置
+    //删除文件
+    public static void deleteFile(String locatorExpression, String filePath) {
+        try {
+            File file=new File(filePath);
+            if(file.exists()&&file.isFile())
+                file.delete();
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("删除文件失败：" + e.getMessage());
+        }
+    }
+
+    //配置ChromeDriver下载地址配置
     private static DesiredCapabilities setDownloadsPath() {
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
         chromePrefs.put("download.default_directory", Constans.DOWNLOADS_PATH);
