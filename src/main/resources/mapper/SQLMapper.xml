@@ -51,4 +51,8 @@
     <delete id="deleteUserVersionConfigData" parameterType="String">
         delete from to8to_member_user WHERE created_by = #{username}
     </delete>
+
+    <delete id="deleteRoleData" parameterType="String">
+        delete from to8to_admin_role WHERE updated_by = #{username}
+    </delete>
 </mapper>

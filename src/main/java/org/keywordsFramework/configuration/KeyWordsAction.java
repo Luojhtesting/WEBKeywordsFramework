@@ -1,7 +1,6 @@
 package org.keywordsFramework.configuration;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -16,12 +15,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.os.WindowsUtils;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
-
-import static org.keywordsFramework.util.InterfaceAction.createFeedbackResult;
-import static org.keywordsFramework.util.InterfaceAction.getAuth;
 
 public class KeyWordsAction {
     public static WebDriver dr;
@@ -80,7 +75,18 @@ public class KeyWordsAction {
         } catch (Exception e) {
             TestSuiteByExcel.testResult = false;
             Log.info("单击" + locatorExpression + "页面元素失败，具体异常信息：" + e.getMessage());
-            e.printStackTrace();
+        }
+    }
+
+    //js单击
+    public static void jsClick(String locatorExpression, String pass) {
+        try {
+            WebElement element = dr.findElement(objectMap.getLocator(locatorExpression));
+            ((JavascriptExecutor) dr).executeScript("arguments[0].click()", element);
+            Log.info("单击" + locatorExpression + "页面元素");
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("单击" + locatorExpression + "页面元素失败，具体异常信息：" + e.getMessage());
         }
     }
 
@@ -271,7 +277,7 @@ public class KeyWordsAction {
     //模型渲染状态
     public static void concludeModelApplyState(String locatorExpression,String modelName) {
         try {
-            int modelId = DateBaseUtil.selectModelId(modelName);
+            int modelId = DataBaseUtil.selectModelId(modelName);
 
             for (int i=0;i<3;i++) {
                 if (InterfaceAction.getModelRenderState(modelId) == 2) {

@@ -5,15 +5,12 @@ import java.lang.reflect.Method;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.keywordsFramework.configuration.Constans;
 import org.keywordsFramework.configuration.KeyWordsAction;
-import org.keywordsFramework.util.DateBaseUtil;
+import org.keywordsFramework.util.DataBaseUtil;
 import org.keywordsFramework.util.ExcelUtil;
 import org.keywordsFramework.util.FileUtil;
 import org.keywordsFramework.util.Log;
-import org.openqa.selenium.os.WindowsUtils;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestSuiteByExcel {
@@ -136,25 +133,27 @@ public class TestSuiteByExcel {
     public void beforeClass() {
         //日志信息打印
         DOMConfigurator.configure("log4j.xml");
-        DateBaseUtil.connectionSqlSession();//建立连接
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
-        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
-        DateBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
-        DateBaseUtil.deleteUserVersionConfigData(Constans.CREATE_USER);//删除账号版本配置数据
-        DateBaseUtil.deleteMapGoodsData(Constans.CREATE_USER);//删除贴图商品数据
+        DataBaseUtil.connectionSqlSession();//建立连接
+        DataBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
+        DataBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
+        DataBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
+        DataBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
+        DataBaseUtil.deleteUserVersionConfigData(Constans.CREATE_USER);//删除账号版本配置数据
+        DataBaseUtil.deleteMapGoodsData(Constans.CREATE_USER);//删除贴图商品数据
+        DataBaseUtil.deleteRoleData(Constans.CREATE_ADMIN_USER);//删除角色数据
         FileUtil.createDir(Constans.DOWNLOADS_PATH);//创建文件下载目录
         //WindowsUtils.killByName("chrome.exe");
     }
 
     @AfterClass
     public void afterClass() {
-        DateBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
-        DateBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
-        DateBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
-        DateBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
-        DateBaseUtil.deleteUserVersionConfigData(Constans.CREATE_USER);//删除账号版本配置数据
-        DateBaseUtil.deleteMapGoodsData(Constans.CREATE_USER);//删除贴图商品数据
-        DateBaseUtil.closeSqlSession();//关闭连接
+        DataBaseUtil.deleteBrandsData(Constans.BRANDS_NAME_ARRAY);//删除品牌测试数据
+        DataBaseUtil.deleteFeedbackData(Constans.FEEDBACK_UID);//删除用户反馈测试数据
+        DataBaseUtil.deleteGoodsByCreaterUser(Constans.CREATE_USER);//删除模型与贴图测试数据
+        DataBaseUtil.deleteMaterialByCreaterUser(Constans.CREATE_USER);//删除材质测试数据
+        DataBaseUtil.deleteUserVersionConfigData(Constans.CREATE_USER);//删除账号版本配置数据
+        DataBaseUtil.deleteMapGoodsData(Constans.CREATE_USER);//删除贴图商品数据
+        DataBaseUtil.deleteRoleData(Constans.CREATE_ADMIN_USER);//删除角色数据
+        DataBaseUtil.closeSqlSession();//关闭连接
     }
 }

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
 
-public class DateBaseUtil {
+public class DataBaseUtil {
 
     private static SqlSession sqlSession;
 
@@ -114,6 +114,16 @@ public class DateBaseUtil {
     public static void deleteUserVersionConfigData(String userName) {
         try {
             sqlSession.delete("deleteUserVersionConfigData", userName);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //删除角色数据
+    public static void deleteRoleData(String userName) {
+        try {
+            sqlSession.delete("deleteRoleData", userName);
             sqlSession.commit();
         } catch (Exception e) {
             e.printStackTrace();
