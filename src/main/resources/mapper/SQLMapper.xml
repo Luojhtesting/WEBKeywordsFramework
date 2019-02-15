@@ -47,4 +47,8 @@
             #{arr}
         </foreach>
     </delete>
+
+    <delete id="deleteUserVersionConfigData" parameterType="String">
+        delete from to8to_member_user WHERE created_by = #{username}
+    </delete>
 </mapper>

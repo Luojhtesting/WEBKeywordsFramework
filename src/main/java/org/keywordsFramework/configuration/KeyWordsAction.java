@@ -398,6 +398,17 @@ public class KeyWordsAction {
         }
     }
 
+    //刷新当前页
+    public static void refresh(String locatorExpression, String pass) {
+        try {
+            dr.navigate().refresh();
+            Log.info("刷新成功");
+        } catch (Exception e) {
+            TestSuiteByExcel.testResult = false;
+            Log.info("刷新失败" + e.getMessage());
+        }
+    }
+
     //配置ChromeDriver下载地址配置
     private static DesiredCapabilities setDownloadsPath() {
         HashMap<String, Object> chromePrefs = new HashMap<String, Object>();

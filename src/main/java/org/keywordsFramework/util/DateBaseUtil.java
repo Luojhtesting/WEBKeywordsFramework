@@ -101,9 +101,19 @@ public class DateBaseUtil {
     }
 
     //删除贴图商品数据
-    public static void deleteMapGoodsDate(String userName) {
+    public static void deleteMapGoodsData(String userName) {
         try {
             sqlSession.delete("deleteMapGoodsData", userName);
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    //删除账号版本配置数据
+    public static void deleteUserVersionConfigData(String userName) {
+        try {
+            sqlSession.delete("deleteUserVersionConfigData", userName);
             sqlSession.commit();
         } catch (Exception e) {
             e.printStackTrace();
