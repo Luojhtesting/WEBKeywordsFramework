@@ -72,10 +72,9 @@ public class TestSuiteByExcel {
                     }
                 }
                 Log.endTestCase(testCaseID);
-
-                //失败重试
-                failRetry(excelPath, retryCount, testCaseNo);
             }
+            //失败重试
+            failRetry(excelPath, retryCount, testCaseNo);
         }
     }
 

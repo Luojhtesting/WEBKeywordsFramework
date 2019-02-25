@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name = "TestSuite" preserve-order="true">
+    <test name = "CheckListTestCase" >
+        <classes>
+            <class name = "org.keywordsFramework.testScripts.TestSuiteByExcel">
+                <methods>
+                    <include name = "testSuite"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
