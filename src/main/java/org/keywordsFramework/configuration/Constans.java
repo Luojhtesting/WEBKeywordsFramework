@@ -3,8 +3,11 @@ package org.keywordsFramework.configuration;
 import java.util.Arrays;
 
 public class Constans {
-    //测试用例路径
-    public static final String Path_ExcelFile = "./src/main/java/org/keywordsFramework/data/关键字驱动测试用例.xlsx";
+    //超级后台测试用例路径
+    public static final String Path_ExcelFile = "./src/main/java/org/keywordsFramework/data/关键字驱动测试用例-超级后台.xlsx";
+
+    //商家后台测试用例路径
+    public static final String PATH_EXCELFILE_MERCHANT = "./src/main/java/org/keywordsFramework/data/关键字驱动测试用例-商家后台.xlsx";
 
     //页面元素路径
     public static final String Path_ConfigurationFile = "./ObjectMap.properties";

@@ -107,7 +107,7 @@ public class ExcelUtil {
     }
 
     //在Excel文件指定的Sheet页写入数据
-    public static void setCellData(String sheetName,int rowNum, int cellNum, String result) {
+    public static void setCellData(String sheetName,int rowNum, int cellNum, String result, String filePath) {
         try {
             ExcelSheet = ExcelWorkbook.getSheet(sheetName);
             XSSFCellStyle cellStyle = ExcelWorkbook.createCellStyle();;
@@ -126,7 +126,7 @@ public class ExcelUtil {
                 Cell.setCellStyle(cellStyle);
                 Cell.setCellValue(result);
             }
-            FileOutputStream fileOut = new FileOutputStream(Constans.Path_ExcelFile);
+            FileOutputStream fileOut = new FileOutputStream(filePath);
             ExcelWorkbook.write(fileOut);
             fileOut.flush();
             fileOut.close();
@@ -180,15 +180,15 @@ public class ExcelUtil {
     }
 
     //测试结果清除
-    public static void testResultsClear() {
+    public static void testResultsClear(String filePath) {
         //suite清理
         for (int i=1;i<ExcelUtil.getRowCount(Constans.SHEET_TEST_SUITE)+1;i++) {
-            ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE,i,Constans.COL_TEST_SUITE_TEST_RESULT,"");
+            ExcelUtil.setCellData(Constans.SHEET_TEST_SUITE,i,Constans.COL_TEST_SUITE_TEST_RESULT,"", filePath);
         }
 
         //步骤清理
         for (int i=1;i<ExcelUtil.getRowCount(Constans.SHEET_TEST_STEPS)+1;i++) {
-            ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS,i,Constans.COL_TEST_STEP_TEST_RESULT,"");
+            ExcelUtil.setCellData(Constans.SHEET_TEST_STEPS,i,Constans.COL_TEST_STEP_TEST_RESULT,"", filePath);
         }
     }
 
